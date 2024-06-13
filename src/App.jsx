@@ -14,7 +14,8 @@ import TopBar from './components/TopBar.jsx'
 import CreatePost from './components/CreatePost.jsx'
 import Help from './components/Help.jsx';
 import Profile from './components/Profile.jsx'
-
+import About from './components/About.jsx';
+import Features from './components/Features.jsx';
 import Register from './components/Register.jsx'
 
 function App() {
@@ -52,6 +53,12 @@ function App() {
               </li>
               <li>
                 <Link to="/register"></Link>
+              </li> 
+              <li>
+                <Link to="/feature"></Link>
+              </li> 
+              <li>
+                <Link to="/about"></Link>
               </li>  
             </ul>
           </nav>
@@ -66,6 +73,9 @@ function App() {
           <Route path="/createpost" element={<CreatePost />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/feature" element={<Features />} />
+          <Route path="/about" element={<About />} />
+
     </Routes>
     
     </div>

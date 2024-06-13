@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 const avatars = [
-  'images\avatar1.png',
-  'images\Logo-y.png',
-  'avatar3.png',
-  'avatar4.png',
+  'https://i.pravatar.cc/150?img=20',
+  'https://i.pravatar.cc/150?img=2',
+  'https://i.pravatar.cc/150?img=5',
+  'https://i.pravatar.cc/150?img=4',
   // Add paths to more avatar images as needed
 ];
 

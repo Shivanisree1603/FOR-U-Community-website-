@@ -76,7 +76,7 @@ app.post('/login', async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    const user = await User.findOne({ username }).maxTimeMS(30000);
+    const user = await User.findOne({ username });
     if (!user) {
       return res.status(401).json({ error: 'Invalid username or password.' });
     }
@@ -108,7 +108,7 @@ app.post('/posts', async (req, res) => {
   }
 });
 
-app.get('/posts', async (req, res) => {
+app.get('/get_posts', async (req, res) => {
   try {
     const posts = await Post.find().sort({ createdAt: -1 });
     res.status(200).json({ status: 'success', posts });

@@ -15,7 +15,7 @@ const postSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-const User = mongoose.model('User', userSchema);
-const Post = mongoose.model('Post', postSchema);
+const User = mongoose.model('User', userSchema,"users");
+const Post = mongoose.model('Post', postSchema,"posts");
 
 module.exports = { User, Post };

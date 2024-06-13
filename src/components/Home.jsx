@@ -13,8 +13,8 @@ export default function Home() {
               </div>
             </Link>
             <div className="hidden md:flex flex-row gap-6 md:gap-14 mt-4 text-lg items-center">
-              <p>About</p>
-              <p>Features</p>
+             <Link to ="/about"><p>About</p></Link> 
+             <Link to="/feature"><p>Features</p></Link> 
               <Link to="/FAQ">
                 <p>FAQ</p>
               </Link>
@@ -33,8 +33,8 @@ export default function Home() {
             <div className="px-6 py-10 md:px-20 md:py-20">
               <strong className="text-3xl md:text-5xl">Ready to join a community where your voice matters?</strong>
               <p className="text-lg md:text-xl mt-6">Anonymously share your story, connecting with others, and seeking justice without fear of retaliation or judgment.</p>
-              <div className="flex items-center justify-center py-10 md:py-20">
-                <button className="rounded-md bg-black px-7 py-5 text-xl text-white">BEGIN YOUR JOURNEY WITH US</button>
+              <div className="flex  py-10 md:py-20 ">
+                <Link to="/register"><button className="rounded-md bg-black px-7 py-5 text-xl text-white">BEGIN YOUR JOURNEY WITH US</button></Link>
               </div>
             </div>
             <div className="mb-16 md:mb-32 md:mr-20">
@@ -97,27 +97,27 @@ export default function Home() {
         </div>
 
         <div className="min-h-screen bg-black text-white">
-          <div className="flex flex-col items-center justify-center">
-            <img className="py-14" src="images/logo black.png" width="100px" alt="Logo" />
+          <div className="flex flex-col items-center justify-center ">
+            <img className="py-20" src="images/logo black.png" width="200px" alt="Logo" />
             <div>
-              <p className="text-center text-xl mx-6 md:mx-40">
+              <p className="text-center text-2xl mx-6 md:mx-40">
                 Explore, connect, and share your voice with our vibrant community. Join us in our mission to foster collaboration, empower individuals, and build a supportive network. Together, we can create positive change.
               </p>
             </div>
-            <button className="mt-10 md:mt-16 rounded-3xl bg-yellow-400 px-6 md:px-3 py-3 text-black font-bold">Get in Touch</button>
+            <button className="mt-10 md:mt-16 rounded-3xl bg-yellow-400 px-8 md:px-3 py-3 text-black font-bold">Get in Touch</button>
             <div className="flex flex-row gap-8 py-10">
               <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="36" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
               </div>
               <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="36" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter">
                   <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
                 </svg>
               </div>
               <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="36" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                   <rect width="4" height="12" x="2" y="9" />
                   <circle cx="4" cy="4" r="2" />

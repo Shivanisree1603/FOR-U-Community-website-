@@ -3,8 +3,8 @@ import AvatarSelection from './AvatarSelection';
 
 const Profile = () => {
   const [selectedAvatar, setSelectedAvatar] = useState('images\avatar1.png');
-  const [firstName, setFirstName] = useState('Michael');
-  const [lastName, setLastName] = useState('Jasparo');
+  const [firstName, setFirstName] = useState('Find Support Here');
+  const [lastName, setLastName] = useState('India');
   const [email, setEmail] = useState('michaeljasparo@gmail.com');
   const [isEditing, setIsEditing] = useState(false);
 
@@ -20,22 +20,20 @@ const Profile = () => {
           <a href="#" className="block py-2 px-4 bg-black  text-white rounded">My Profile</a>
           <a href="#" className="block py-2 px-4 text-gray-700">Security</a>
           <a href="#" className="block py-2 px-4 text-gray-700">Teams</a>
-          <a href="#" className="block py-2 px-4 text-gray-700">Team Member</a>
           <a href="#" className="block py-2 px-4 text-gray-700">Notifications</a>
-          <a href="#" className="block py-2 px-4 text-gray-700">Billing</a>
-          <a href="#" className="block py-2 px-4 text-gray-700">Data Export</a>
           <a href="#" className="block py-2 px-4 text-gray-700">Delete Account</a>
+          <a href="/" className="block py-2 px-4 text-gray-700">Logout</a>
         </nav>
       </div>
       <div className="flex-1 p-8">
         <h1 className="text-3xl font-bold mb-6">My Profile</h1>
         <div className="bg-white p-6 rounded-lg shadow-md mb-8">
           <div className="flex items-center space-x-6 mb-4">
-            <img src={selectedAvatar} alt="Profile Avatar" className="w-24 h-24 rounded-full" />
+            <img src={selectedAvatar}  className="w-24 h-24 rounded-full bg-gray-600" />
             <div>
-              <h2 className="text-2xl font-semibold">Micheal Jascasic</h2>
-              <p>Law Office of Micheal Jascasic</p>
-              <p>4140 Parker Rd. Allentown</p>
+              <h2 className="text-2xl font-semibold">Venus2253</h2>
+              <p></p>
+              <p></p>
             </div>
           </div>
           <AvatarSelection selectedAvatar={selectedAvatar} onSelectAvatar={setSelectedAvatar} />
@@ -50,7 +48,7 @@ const Profile = () => {
           {isEditing ? (
             <div className="space-y-4">
               <div>
-                <label className="block font-semibold">First Name</label>
+                <label className="block font-semibold">Description</label>
                 <input
                   type="text"
                   value={firstName}
@@ -59,7 +57,7 @@ const Profile = () => {
                 />
               </div>
               <div>
-                <label className="block font-semibold">Last Name</label>
+                <label className="block font-semibold">Country</label>
                 <input
                   type="text"
                   value={lastName}
@@ -84,11 +82,11 @@ const Profile = () => {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p className="font-semibold">First Name</p>
+                <p className="font-semibold">Description</p>
                 <p>{firstName}</p>
               </div>
               <div>
-                <p className="font-semibold">Last Name</p>
+                <p className="font-semibold"></p>
                 <p>{lastName}</p>
               </div>
               <div>

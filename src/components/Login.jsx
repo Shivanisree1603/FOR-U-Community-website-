@@ -45,9 +45,17 @@ const Login = () => {
   };
 
   return (
+
     <div className="min-h-screen flex items-center justify-center bg-yellow-400">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h2 className="text-xl font-semibold text-black mb-6">Login</h2>
+      <div className="flex justify-center items-center">
+          <img src="images/logo white.png" width="100px" height="300px" />
+        </div>
+        <i className="text-xl font-semibold text-black mb-6 mt-2 flex justify-center items-center">
+          Empower Your Voice -<strong> Login Here</strong>
+        </i>
+        {/* <h2 className="text-2xl font-semibold text-black mb-6 text-center ">Login</h2> */}
+        
         {errorMessage && (
           <div className="mb-4 text-red-600">
             {errorMessage}
